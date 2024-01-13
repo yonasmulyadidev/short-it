@@ -26,6 +26,7 @@
       <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
       <ProjectReference Include="..\Persistence\Persistence.csproj" />
       <ProjectReference Include="..\UrlShortenerApi\UrlShortenerApi.csproj" />
+
     </ItemGroup>
 
 
