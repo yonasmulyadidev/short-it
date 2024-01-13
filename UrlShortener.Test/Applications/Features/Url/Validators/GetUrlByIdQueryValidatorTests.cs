@@ -1,6 +1,5 @@
 using Application.Features.Url.Queries.GetUrlById;
 using AutoFixture;
-using Shouldly;
 using UrlShortener.Test.BaseClasses;
 using Xunit;
 
@@ -35,6 +34,6 @@ public sealed class GetUrlByIdQueryValidatorTests : TestFixture<GetUrlByIdQueryV
         var result = await Target.ValidateAsync(request);
         
         // Assert
-        result.IsValid.ShouldBeTrue(); 
+        Assert.True(result.IsValid); 
     }
 }

@@ -1,6 +1,5 @@
 using Application.Features.Url.Queries.GetUrlByBase64PrefixQuery;
 using AutoFixture;
-using Shouldly;
 using UrlShortener.Test.BaseClasses;
 using Xunit;
 
@@ -35,6 +34,6 @@ public sealed class GetUrlByBase64PrefixQueryValidatorTests : TestFixture<GetUrl
         var result = await Target.ValidateAsync(request);
         
         // Assert
-        result.IsValid.ShouldBeTrue(); 
+        Assert.True(result.IsValid); 
     }
 }

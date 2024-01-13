@@ -4,5 +4,13 @@
     &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Validators.GetUrlByIdQueryValidatorTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Validators.GetUrlByBase64PrefixQueryValidatorTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Validators.GenerateUrlCommandValidatorTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetAllUrlsQueryHandlerTests.Given_UrlRepositoryHasData_GetAllUrlsQueryHandler_ReturnCorrectResponseData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetUrlByIdQueryHandlerTests.Given_UrlRepositoryHasData_WithMatchingId_GetUrlByIdQueryHandler_ReturnCorrectResponseData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetUrlByIdQueryHandlerTests.Given_UrlRepositoryHasData_WithNoMatchingId_When_GetUrlByIdQueryHandler_IsCalled_Then_Throw&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetUrlByBase64PrefixQueryHandlerTests.Given_UrlRepositoryHasData_WithMatchingUrlPrefix_When_GetUrlByBase64PrefixQueryHandler_IsCalled_Then_ReturnCorrectResponseData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetUrlByBase64PrefixQueryHandlerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Commands.GenerateUrlCommandHandlerTests.Given_UrlRepositoryHasData_WithMatchingId_When_GetUrlByIdQueryHandler_IsCalled_Then_ReturnCorrectResponseData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Commands.GenerateUrlCommandHandlerTests.Given_Valid_Request_And_HaveDuplicateData_When_GenerateUrlCommandHandler_IsCalled_Then_Throw&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Commands.GenerateUrlCommandHandlerTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
