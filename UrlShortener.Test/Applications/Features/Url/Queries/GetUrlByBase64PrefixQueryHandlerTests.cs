@@ -2,7 +2,6 @@ using Application.Contracts.Persistence;
 using Application.Exceptions;
 using Application.Features.Url.DTOs;
 using Application.Features.Url.Queries.GetUrlByBase64PrefixQuery;
-using Application.Features.Url.Queries.GetUrlById;
 using AutoFixture;
 using AutoMapper;
 using Moq;

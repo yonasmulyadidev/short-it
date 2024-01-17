@@ -12,5 +12,9 @@
     &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Commands.GenerateUrlCommandHandlerTests.Given_UrlRepositoryHasData_WithMatchingId_When_GetUrlByIdQueryHandler_IsCalled_Then_ReturnCorrectResponseData&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Commands.GenerateUrlCommandHandlerTests.Given_Valid_Request_And_HaveDuplicateData_When_GenerateUrlCommandHandler_IsCalled_Then_Throw&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Commands.GenerateUrlCommandHandlerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests.Given_GetAllUrlsQuery_When_GetAllUrls_IsCalled_Then_ReturnOk&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests.Given_GetUrlById_When_GetAllUrls_IsCalled_Then_ReturnOk&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests.Given_GetUrlById_When_GetUrlById_IsCalled_Then_ReturnOk&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

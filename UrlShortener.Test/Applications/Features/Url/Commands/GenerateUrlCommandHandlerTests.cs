@@ -1,7 +1,6 @@
 using Application.Contracts.Persistence;
 using Application.Exceptions;
 using Application.Features.Url.Commands.GenerateUrl;
-using Application.Features.Url.DTOs;
 using AutoFixture;
 using AutoMapper;
 using Moq;
