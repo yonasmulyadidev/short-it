@@ -16,5 +16,10 @@
     &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests.Given_GetUrlById_When_GetAllUrls_IsCalled_Then_ReturnOk&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests.Given_GetUrlById_When_GetUrlById_IsCalled_Then_ReturnOk&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Controllers.UrlControllerIntegrationTests.Should_return_weather_forecast_on_http_get&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Controllers.UrlControllerIntegrationTests.When_GetUrlById_Endpoint_Is_Triggered_Then_Return_Ok&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Controllers.UrlControllerIntegrationTests.When_GetAllUrl_Endpoint_Is_Triggered_Then_Return_Ok&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Controllers.UrlControllerIntegrationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Repositories.UrlRepositoryTests.Given_Correct_OriginalUrl_When_GetByOriginalUrl_Is_Called_Then_Return_Data&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

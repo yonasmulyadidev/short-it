@@ -54,8 +54,7 @@ public class UrlController : ControllerBase
     
         return CreatedAtAction(nameof(GetAllUrls), response);
     }
-
-    //Todo: check if 302 is required for the redirect status
+    
     [HttpGet("redirect/{uriPrefix}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
