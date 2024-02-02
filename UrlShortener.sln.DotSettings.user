@@ -1,4 +1,25 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e7c7ad4f_002D53fb_002D44d3_002D899c_002Dd0cc30d8104e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;test&amp;gt;\&amp;lt;UrlShortener.Test&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="C:\IT\side projects\UrlShortener\UrlShortener.Test" Presentation="&amp;lt;test&amp;gt;\&amp;lt;UrlShortener.Test&amp;gt;" /&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Validators.GetUrlByIdQueryValidatorTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Validators.GetUrlByBase64PrefixQueryValidatorTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Validators.GenerateUrlCommandValidatorTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetAllUrlsQueryHandlerTests.Given_UrlRepositoryHasData_GetAllUrlsQueryHandler_ReturnCorrectResponseData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetUrlByIdQueryHandlerTests.Given_UrlRepositoryHasData_WithMatchingId_GetUrlByIdQueryHandler_ReturnCorrectResponseData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetUrlByIdQueryHandlerTests.Given_UrlRepositoryHasData_WithNoMatchingId_When_GetUrlByIdQueryHandler_IsCalled_Then_Throw&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetUrlByBase64PrefixQueryHandlerTests.Given_UrlRepositoryHasData_WithMatchingUrlPrefix_When_GetUrlByBase64PrefixQueryHandler_IsCalled_Then_ReturnCorrectResponseData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Queries.GetUrlByBase64PrefixQueryHandlerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Commands.GenerateUrlCommandHandlerTests.Given_UrlRepositoryHasData_WithMatchingId_When_GetUrlByIdQueryHandler_IsCalled_Then_ReturnCorrectResponseData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Commands.GenerateUrlCommandHandlerTests.Given_Valid_Request_And_HaveDuplicateData_When_GenerateUrlCommandHandler_IsCalled_Then_Throw&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Applications.Features.Url.Commands.GenerateUrlCommandHandlerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests.Given_GetAllUrlsQuery_When_GetAllUrls_IsCalled_Then_ReturnOk&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests.Given_GetUrlById_When_GetAllUrls_IsCalled_Then_ReturnOk&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests.Given_GetUrlById_When_GetUrlById_IsCalled_Then_ReturnOk&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2AECC6DC-B11E-4E59-85DB-5E017ADD6F84::net7.0::UrlShortener.Test.Controllers.UrlControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Controllers.UrlControllerIntegrationTests.Should_return_weather_forecast_on_http_get&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Controllers.UrlControllerIntegrationTests.When_GetUrlById_Endpoint_Is_Triggered_Then_Return_Ok&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Controllers.UrlControllerIntegrationTests.When_GetAllUrl_Endpoint_Is_Triggered_Then_Return_Ok&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Controllers.UrlControllerIntegrationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8569F4E4-A2EE-404B-91DC-85C191AF72DA::net7.0::UrlShortener.IntegrationTest.Repositories.UrlRepositoryTests.Given_Correct_OriginalUrl_When_GetByOriginalUrl_Is_Called_Then_Return_Data&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
