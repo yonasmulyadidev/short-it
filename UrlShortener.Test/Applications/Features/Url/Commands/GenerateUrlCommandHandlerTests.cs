@@ -66,4 +66,21 @@ public class GenerateUrlCommandHandlerTests
             await target.Handle(request, CancellationToken.None)
         );
     }
+
+    [Fact] 
+    public async Task Given_InvalidCommand_When_GenerateUrlCommandHandler_IsCalled_Then_Throw()
+    {
+        // Arrange
+        const string invalidUrl = "";
+        var request = _fixture.Build<GenerateUrlCommand>()
+            .With(x => x.OriginalUrl, invalidUrl)
+            .Create();
+        
+        var target = new GenerateUrlCommandHandler(_mockRepository.Object, _mockMapper.Object);
+        
+        // Act & Assert
+        await Assert.ThrowsAsync<ValidationErrorException>(async () => 
+            await target.Handle(request, CancellationToken.None)
+        );
+    }
 }

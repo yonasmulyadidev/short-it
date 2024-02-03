@@ -45,7 +45,7 @@ public class UrlControllerIntegrationTests : IClassFixture<IntegrationTestFactor
         // Act
         var response = await _client.PostAsJsonAsync("/api/Url", new GenerateUrlCommand
         {
-            OriginalUrl = TestConstants.OriginalUrl1
+            OriginalUrl = "www.abcde.com"
         });
 
         // Assert

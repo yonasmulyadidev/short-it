@@ -1,5 +1,8 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace Domain.Configurations;
 
+[ExcludeFromCodeCoverage]
 public class UrlShortenerDbOptions
 {
     public string Host { get; set; }

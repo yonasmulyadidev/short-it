@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Application.Contracts.Persistence;
 using Domain.Configurations;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ using Persistence.Repositories;
 
 namespace Persistence;
 
+[ExcludeFromCodeCoverage]
 public static class DependencyInjection
 {
     public static IServiceCollection AddPersistenceServices(this IServiceCollection services)
