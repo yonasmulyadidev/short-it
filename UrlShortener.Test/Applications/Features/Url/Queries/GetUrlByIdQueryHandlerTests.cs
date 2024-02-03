@@ -62,4 +62,21 @@ public sealed class GetUrlByIdQueryHandlerTests
             await target.Handle(request, CancellationToken.None)
         );
     }
+    
+    [Fact]
+    public async Task Given_InvalidQuery_When_GetUrlByIdQueryHandler_IsCalled_Then_Throw()
+    {
+        // Arrange
+        const string invalidId = "123456";
+        var request = _fixture.Build<GetUrlByIdQuery>()
+            .With(x => x.UrlId, invalidId)
+            .Create();
+        
+        var target = new GetUrlByIdQueryHandler(_mockMapper.Object, _mockRepository.Object);
+        
+        // Act & Assert
+        await Assert.ThrowsAsync<ValidationErrorException>(async () => 
+            await target.Handle(request, CancellationToken.None)
+        );
+    }
 }

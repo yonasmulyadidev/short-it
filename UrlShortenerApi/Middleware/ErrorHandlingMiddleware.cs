@@ -1,9 +1,11 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using Application.Exceptions;
 using Newtonsoft.Json;
 
 namespace UrlShortenerApi.Middleware;
 
+[ExcludeFromCodeCoverage]
 public sealed class ErrorHandlingMiddleware
 {
     private readonly RequestDelegate _next;

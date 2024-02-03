@@ -35,6 +35,9 @@ public class IntegrationTestFactory<TStartup> : WebApplicationFactory<TStartup>
                 var serviceProvider = scope.ServiceProvider;
                 var dbContext = serviceProvider.GetRequiredService<UrlDbContext>();
 
+                // Ensure the database is deleted first for each integration test session
+                dbContext.Database.EnsureDeleted();
+                
                 // Ensure the database is created and apply migrations
                 dbContext.Database.EnsureCreated();
 

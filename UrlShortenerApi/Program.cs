@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Application;
 using Infrastructure;
 using Persistence;
@@ -45,4 +46,5 @@ app.MapControllers();
 
 app.Run();
 
+[ExcludeFromCodeCoverage]
 public partial class Program { }

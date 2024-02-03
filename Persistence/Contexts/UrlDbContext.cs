@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Contexts;
 
+[ExcludeFromCodeCoverage]
 public class UrlDbContext : DbContext
 {
     public UrlDbContext(DbContextOptions<UrlDbContext> options) : base(options)

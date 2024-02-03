@@ -1,7 +1,9 @@
+using System.Diagnostics.CodeAnalysis;
 using Domain.Configurations;
 
 namespace UrlShortenerApi.Configurations;
 
+[ExcludeFromCodeCoverage]
 public static class OptionsConfiguration
 {
     public static IServiceCollection AddOptionsConfiguration(this IServiceCollection services,

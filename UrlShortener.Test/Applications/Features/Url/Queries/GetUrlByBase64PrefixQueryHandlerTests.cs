@@ -62,4 +62,21 @@ public sealed class GetUrlByBase64PrefixQueryHandlerTests
             await target.Handle(request, CancellationToken.None)
         );
     }
+    
+    [Fact]
+    public async Task Given_InvalidQuery_When_GetUrlByBase64PrefixQueryHandler_IsCalled_Then_Throw()
+    {
+        // Arrange
+        const string invalidBasePrefix = "";
+        var request = _fixture.Build<GetUrlByBase64PrefixQuery>()
+            .With(x => x.Base64Prefix, invalidBasePrefix)
+            .Create();
+        
+        var target = new GetUrlByBase64PrefixQueryHandler(_mockMapper.Object, _mockRepository.Object);
+        
+        // Act & Assert
+        await Assert.ThrowsAsync<ValidationErrorException>(async () => 
+            await target.Handle(request, CancellationToken.None)
+        );
+    }
 }
