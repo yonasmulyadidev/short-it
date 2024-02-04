@@ -18,7 +18,7 @@ public sealed class GetAllUrlsQueryHandlerTests
     public async Task Given_UrlRepositoryHasData_When_GetAllUrlsQueryHandler_IsCalled_Then_ReturnCorrectResponseData()
     {
         // Arrange
-        var urls = _fixture.CreateMany<Domain.Entities.Url>().ToList().AsReadOnly();
+        var urls = _fixture.CreateMany<global::Domain.Entities.Url>().ToList().AsReadOnly();
         var urlResponses = _fixture.CreateMany<UrlResponse>().ToList();
         var request = _fixture.Create<GetAllUrlsQuery>();
         

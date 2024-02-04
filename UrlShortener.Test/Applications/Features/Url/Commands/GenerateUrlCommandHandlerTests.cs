@@ -18,7 +18,7 @@ public class GenerateUrlCommandHandlerTests
     public async Task Given_Valid_Request_And_NoDuplicate_When_GenerateUrlCommandHandler_IsCalled_Then_Succeed()
     {
         // Arrange
-        var url = _fixture.Build<Domain.Entities.Url>()
+        var url = _fixture.Build<global::Domain.Entities.Url>()
             .With(x => x.ShortUrl, "abcde")
             .Create();
         var request = _fixture.Build<GenerateUrlCommand>()
@@ -29,10 +29,10 @@ public class GenerateUrlCommandHandlerTests
 
         
         _mockRepository.Setup(r => r.GetByOriginalUrl(It.IsAny<string>()))
-            .ReturnsAsync((Domain.Entities.Url?)null);
-        _mockRepository.Setup(r => r.CreateAsync(It.IsAny<Domain.Entities.Url>()))
+            .ReturnsAsync((global::Domain.Entities.Url?)null);
+        _mockRepository.Setup(r => r.CreateAsync(It.IsAny<global::Domain.Entities.Url>()))
             .ReturnsAsync(url);
-        _mockMapper.Setup(m => m.Map<Domain.Entities.Url>(It.IsAny<GenerateUrlCommand>()))
+        _mockMapper.Setup(m => m.Map<global::Domain.Entities.Url>(It.IsAny<GenerateUrlCommand>()))
         .Returns(url);
         
         // Act
@@ -41,14 +41,14 @@ public class GenerateUrlCommandHandlerTests
         // Assert
         Assert.NotEmpty(response);
         _mockRepository.Verify(r => r.GetByOriginalUrl(It.IsAny<string>()), Times.Once);
-        _mockRepository.Verify(r => r.CreateAsync(It.IsAny<Domain.Entities.Url>()), Times.Once);
+        _mockRepository.Verify(r => r.CreateAsync(It.IsAny<global::Domain.Entities.Url>()), Times.Once);
     }
     
     [Fact]
     public async Task Given_Valid_Request_And_HaveDuplicateData_When_GenerateUrlCommandHandler_IsCalled_Then_Throw()
     {
         // Arrange
-        var url = _fixture.Build<Domain.Entities.Url>()
+        var url = _fixture.Build<global::Domain.Entities.Url>()
             .With(x => x.ShortUrl, "abcde")
             .Create();
         var request = _fixture.Build<GenerateUrlCommand>()

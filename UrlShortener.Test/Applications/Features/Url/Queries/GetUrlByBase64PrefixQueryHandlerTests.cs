@@ -19,7 +19,7 @@ public sealed class GetUrlByBase64PrefixQueryHandlerTests
     public async Task Given_UrlRepositoryHasData_WithMatchingUrlPrefix_When_GetUrlByBase64PrefixQueryHandler_IsCalled_Then_ReturnCorrectResponseData()
     {
         // Arrange
-        var url = _fixture.Create<Domain.Entities.Url>();
+        var url = _fixture.Create<global::Domain.Entities.Url>();
         var urlResponse = _fixture.Create<UrlResponse>();
         var request = _fixture.Build<GetUrlByBase64PrefixQuery>()
             .With(x => x.Base64Prefix, "test1234")
@@ -44,7 +44,7 @@ public sealed class GetUrlByBase64PrefixQueryHandlerTests
     public async Task Given_UrlRepositoryHasData_WithNoMatchingUrlPrefix_When_GetUrlByBase64PrefixQueryHandler_IsCalled_Then_Throw()
     {
         // Arrange
-        var url = _fixture.Create<Domain.Entities.Url>();
+        var url = _fixture.Create<global::Domain.Entities.Url>();
         var urlResponse = _fixture.Create<UrlResponse>();
         var request = _fixture.Build<GetUrlByBase64PrefixQuery>()
             .With(x => x.Base64Prefix, "test1234")
@@ -53,7 +53,7 @@ public sealed class GetUrlByBase64PrefixQueryHandlerTests
         var target = new GetUrlByBase64PrefixQueryHandler(_mockMapper.Object, _mockRepository.Object);
 
         _mockRepository.Setup(r => r.GetByShortPrefix(It.IsAny<string>()))
-            .ReturnsAsync((Domain.Entities.Url?)null);
+            .ReturnsAsync((global::Domain.Entities.Url?)null);
         _mockMapper.Setup(m => m.Map<UrlResponse>(url))
             .Returns(urlResponse);
 

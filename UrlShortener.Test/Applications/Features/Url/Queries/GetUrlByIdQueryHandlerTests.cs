@@ -19,7 +19,7 @@ public sealed class GetUrlByIdQueryHandlerTests
     public async Task Given_UrlRepositoryHasData_WithMatchingId_When_GetUrlByIdQueryHandler_IsCalled_Then_ReturnCorrectResponseData()
     {
         // Arrange
-        var url = _fixture.Create<Domain.Entities.Url>();
+        var url = _fixture.Create<global::Domain.Entities.Url>();
         var urlResponse = _fixture.Create<UrlResponse>();
         var request = _fixture.Build<GetUrlByIdQuery>()
             .With(x => x.UrlId, new Guid().ToString())
@@ -44,7 +44,7 @@ public sealed class GetUrlByIdQueryHandlerTests
     public async Task Given_UrlRepositoryHasData_WithNoMatchingId_When_GetUrlByIdQueryHandler_IsCalled_Then_Throw()
     {
         // Arrange
-        var url = _fixture.Create<Domain.Entities.Url>();
+        var url = _fixture.Create<global::Domain.Entities.Url>();
         var urlResponse = _fixture.Create<UrlResponse>();
         var request = _fixture.Build<GetUrlByIdQuery>()
             .With(x => x.UrlId, new Guid().ToString())
@@ -53,7 +53,7 @@ public sealed class GetUrlByIdQueryHandlerTests
         var target = new GetUrlByIdQueryHandler(_mockMapper.Object, _mockRepository.Object);
 
         _mockRepository.Setup(r => r.GetByIdAsync(It.IsAny<Guid>()))!
-            .ReturnsAsync((Domain.Entities.Url)null!);
+            .ReturnsAsync((global::Domain.Entities.Url)null!);
         _mockMapper.Setup(m => m.Map<UrlResponse>(url))
             .Returns(urlResponse);
         

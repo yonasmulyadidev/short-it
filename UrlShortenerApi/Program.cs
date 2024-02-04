@@ -1,6 +1,8 @@
 using System.Diagnostics.CodeAnalysis;
 using Application;
+using HealthChecks.UI.Client;
 using Infrastructure;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Persistence;
 using UrlShortenerApi.Configurations;
 using UrlShortenerApi.Middleware;
@@ -14,6 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices();
 builder.Services.AddPersistenceServices();
+builder.Services.AddHealthChecks();
 
 // Add Cors
 builder.Services.AddCors(options =>
@@ -43,6 +46,13 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHealthChecks(
+"/health",
+new HealthCheckOptions
+{
+    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+});
 
 app.Run();
 
